@@ -4,6 +4,7 @@ import {useMediaQuery} from 'react-responsive'
 import { SplitText, ScrollTrigger } from "gsap/all";
 import lemon from '../imgs/lemon.png'
 import lemonSlice from '../imgs/lemonslice.png'
+import mocktail from '../imgs/mocktail.png'
 gsap.registerPlugin(SplitText, ScrollTrigger);
 
 function Hero(props) {
@@ -58,7 +59,7 @@ function Hero(props) {
     <div className="text-white">
       <section
         id="hero"
-        className="bg-blue-400 relative h-screen overflow-hidden"
+        className="grad-center relative h-screen overflow-hidden"
       >
         <h1
           
@@ -79,14 +80,15 @@ function Hero(props) {
           className="max-w-40 absolute -right-1/8 md:-right-1/16 top-1/4 -rotate-90"
         />
         <div className="absolute flex justify-between items-end bottom-0  w-full p-4">
-          <p className="w-20 style-font paragraph h-min text-lg md:text-4xl md:w-60 bg-white/80 text-gray-600 rounded-lg">
+          <p className="w-20 style-font paragraph h-min text-lg md:text-4xl md:w-60 rounded-lg">
             "Shake it, stir it, sip it"
           </p>
-          <p className="w-40 paragraph hidden lg:inline italic md:w-60">
+          <p className="text-xl w-40 paragraph  italic md:w-60">
             Innovative blends and daring twists designed for those who crave
             something extraordinary.
           </p>
         </div>
+        
       </section>
     </div>
   );

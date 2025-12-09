@@ -7,7 +7,7 @@
     mix-blend-mode: multiply;
 }
 .grad-center {
-    background: radial-gradient(circle at center,rgb(60, 145, 206), rgb(10, 88, 152), rgb(0, 72, 102));
+    background: radial-gradient(circle at center,rgb(101, 181, 238), rgb(32, 125, 201),rgb(8, 161, 226));
 }
 .style-font {
   font-family: "Cormorant Garamond", serif;
