@@ -37,8 +37,8 @@
 }
 
 @utility masked-img {
-    mask-image: url();
+    mask-image: url('https://images.pexels.com/photos/305555/pexels-photo-305555.jpeg');
     mask-repeat: no-repeat;
     mask-position: center;
-    mask-size: 50%
+    mask-size: 100%
 }

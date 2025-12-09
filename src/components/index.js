@@ -59,18 +59,12 @@ export const mocktailsList = [
         price: '$19'
     }
 ]
-const profileList = [
+export const profileList = [
     {
-        imgPath: ''
+        imgPath: 'https://images.pexels.com/photos/4917809/pexels-photo-4917809.jpeg'
     },
     {
-        imgPath: ''
-    },
-    {
-        imgPath: ''
-    },
-    {
-        imgPath: ''
+        imgPath: 'https://images.pexels.com/photos/305555/pexels-photo-305555.jpeg'
     }
 ]
 const FeatureLists = [

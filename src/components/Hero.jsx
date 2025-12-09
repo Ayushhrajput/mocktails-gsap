@@ -15,20 +15,13 @@ function Hero(props) {
 
   useLayoutEffect(() => {
     
-    const titleSplit = new SplitText(".titled", { type: "lines" });
+
     const paragraphSplit = new SplitText(".paragraph", {
       type: "lines",
     });
     
     
-    gsap.set(titleSplit.chars, { opacity: 1 });
-    gsap.from(titleSplit.lines, {
-      yPercent: 40,
-      opacity: 0,
-      duration: 1.8,
-      ease: "expo.inOut",
-      stagger: 0.06,
-    });
+    
     gsap.from(paragraphSplit.lines, {
       opacity: 0,
       yPercent: 100,
@@ -36,6 +29,14 @@ function Hero(props) {
       ease: "power1.inOut",
       stagger: 0.04,
       delay: 1,
+    });
+    const titleSplit = new SplitText(".titled", { type: "lines" });
+    gsap.from(titleSplit.lines, {
+      yPercent: 40,
+      opacity: 0,
+      duration: 1.8,
+      ease: "expo.inOut",
+      stagger: 0.06,
     });
     gsap
       .timeline({
@@ -59,31 +60,16 @@ function Hero(props) {
     <div className="text-white">
       <section
         id="hero"
-        className="grad-center relative h-screen overflow-hidden"
+        className="bg-[url('https://images.pexels.com/photos/12419161/pexels-photo-12419161.jpeg')] relative bg-cover bg-center h-140 w-full overflow-hidden"
       >
         <h1
           
-          className="text-6xl lg:text-[12rem] titled font-bold style-font w-max absolute top-1/6 left-1/2 -translate-x-1/2 z-10 "
+          className="text-8xl md:text-[12rem] titled font-extrabold w-max absolute top-1/6 left-1/2 -translate-x-1/2 z-10 "
         >
           MOJITO
         </h1>
-        <img
-          src={lemonSlice}
-          alt=""
-          id="l-lemon"
-          className="max-w-40 absolute -left-1/6 md:-left-1/16 top-1/2"
-        />
-        <img
-          src={lemon}
-          alt=""
-          id="r-lemon"
-          className="max-w-40 absolute -right-1/8 md:-right-1/16 top-1/4 -rotate-90"
-        />
-        <div className="absolute flex justify-between items-end bottom-0  w-full p-4">
-          <p className="w-20 style-font paragraph h-min text-lg md:text-4xl md:w-60 rounded-lg">
-            "Shake it, stir it, sip it"
-          </p>
-          <p className="text-xl w-40 paragraph  italic md:w-60">
+        <div className="absolute bottom-0 w-60 left-10/12 -mx-40 p-4">
+          <p className="text-xl  paragraph  italic">
             Innovative blends and daring twists designed for those who crave
             something extraordinary.
           </p>

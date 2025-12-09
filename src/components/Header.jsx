@@ -23,11 +23,11 @@ function Header(props) {
         })
     }, [])
     return (
-        <header className='text-white fixed left-0 top-0 w-full z-10'>
+        <header className='text-white fixed left-0 top-0 w-full z-40'>
             <div className='flex-col md:flex-center px-4 p-2'>
                 <a href= '' className='flex-center gap-4 shrink-0'>
                     <img src="/" alt="" className='' />
-                    <p className='w-max style-font font-bold text-2xl'>Velvet Pour</p>
+                    <p className='w-max  text-2xl'>Velvet Pour</p>
                 </a>
                 <ul className='flex justify-around md:justify-end gap-4 md:gap-10 w-full px-10'>
                     {headerLinks.map((link) => (

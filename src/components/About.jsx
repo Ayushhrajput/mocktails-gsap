@@ -4,6 +4,7 @@ import pexels1 from '../imgs/pexels1.jpg'
 import pexels2 from '../imgs/pexels2.jpg'
 import pexels3 from '../imgs/pexels3.jpg'
 import pexels4 from '../imgs/pexels4.jpg'
+import {profileList} from './index.js'
 
 function About(props) {
     return (
@@ -15,15 +16,16 @@ function About(props) {
                 </div>
                 <div className='w-full md:w-sm'>
                     <p className='md:text-xl text-lg'> Raise your glass and taste the perfect balance of flavor and flair.</p>
-                    <div className='flex gap-4'>
+                    <div className='flex gap-6'>
                         <div>
                             <span className='md:text-4xl text-2xl'>4.5</span>
                             <span className='md:text-xl'>/</span>
                             <span className='md:text-xl'>5</span>
                         </div>
                         <div className='flex'>
-                            <img src="https://images.pexels.com/photos/4917809/pexels-photo-4917809.jpeg" alt="" className='w-10 h-10 object-cover rounded-full border z-10'/>
-                            <img src='https://images.pexels.com/photos/305555/pexels-photo-305555.jpeg' alt="" className='w-10 h-10 object-cover rounded-full border -ml-4 '/>
+                            {profileList.map((profile) => (
+                                <img key={profile.imgPath} src={profile.imgPath} alt="" className='w-10 h-10 object-cover rounded-full border -ml-4 ' ></img>
+                            ))}
                         </div>
                     </div>
                 </div>
@@ -35,6 +37,12 @@ function About(props) {
                 <img src={pexels2} alt="" className='w-max md:w-xl md:h-min rounded-xl object-cover'/>
                 <img src={pexels3} alt="" className='w-max md:w-lg rounded-xl object-cover'/>
             </div>
+            <div>
+                <div>
+                    
+                </div>
+            </div>
+            
         </div>
         
         

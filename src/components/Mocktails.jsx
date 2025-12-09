@@ -16,8 +16,7 @@ function Mocktails(props) {
     
 
     return (
-        <div className='h-dvh relative bg-gray-800 ' id='box'>
-            <h1 className='px-8 text-white text-2xl lg:text-4xl w-max h-min absolute  mt-2 md:top-1/6 style-font '>Mocktails</h1>
+        <div className=' bg-gray-800 ' id='box'>
             
         </div>
     );
