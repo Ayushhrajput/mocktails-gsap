@@ -8,16 +8,16 @@ import {profileList} from './index.js'
 
 function About(props) {
     return (
-        <div className='bg-gray-800'>
-            <div className='w-full text-white  flex flex-col md:flex-row justify-between gap-10 px-4'>
+        <div className=''>
+            <div className='w-full  flex flex-col md:flex-row justify-between gap-10 px-4 py-10'>
                 <div className='flex flex-col gap-4'>
-                    <h1 className=' px-8 bg-white text-black w-max h-min rounded-4xl'>Cocktails</h1>
+                    <h1 className=' px-8 w-max text-white h-min rounded-4xl bg-gray-400'>Cocktails</h1>
                     <p className='text-4xl style-font'> "Cocktails designed to delight."</p>
                 </div>
                 <div className='w-full md:w-sm'>
                     <p className='md:text-xl text-lg'> Raise your glass and taste the perfect balance of flavor and flair.</p>
                     <div className='flex gap-6'>
-                        <div>
+                        <div className='text-gray-600'>
                             <span className='md:text-4xl text-2xl'>4.5</span>
                             <span className='md:text-xl'>/</span>
                             <span className='md:text-xl'>5</span>
