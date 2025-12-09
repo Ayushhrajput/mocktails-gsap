@@ -13,7 +13,7 @@ function About(props) {
                     <h1 className=' px-8 bg-white text-black w-max h-min rounded-4xl'>Cocktails</h1>
                     <p className='text-4xl style-font'> "Cocktails designed to delight."</p>
                 </div>
-                <div className='w-sm'>
+                <div className='w-full md:w-sm'>
                     <p className='md:text-xl text-lg'> Raise your glass and taste the perfect balance of flavor and flair.</p>
                     <div className='flex gap-4'>
                         <div>
