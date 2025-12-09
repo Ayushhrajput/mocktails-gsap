@@ -31,22 +31,7 @@ function Mocktails(props) {
                 
             }
         )
-        const listSplit  = new SplitText('.list', {
-            type: ' words'
-        })
-        const tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: '#box',
-                start: 'top center',
-                end: 'center center',
-                scrub: true
-            }
-        }).from(listSplit.words, {
-            opacity: 0,
-            duration: 0.5,
-            stagger: 0.06,
-            ease: 'power1.inOut'
-        })
+        
     }, [])
     
 
