@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@utility flex-center {
+    @apply flex flex-row justify-center items-center;
+}
+
+.video {
+    mix-blend-mode: multiply;
+}
+.grad-center {
+    background: radial-gradient(circle at center,rgb(60, 145, 206), rgb(10, 88, 152), rgb(0, 72, 102));
+}
+.style-font {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.font-lg {
+    font-size: 10rem;
+}
+
+@utility col-center {
+    @apply flex flex-col justify-center items-center;
+}
+
+@utility abs-center {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+}
+@utility text-gradient {
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.titled div, 
+.titled span {
+  display: inline-block;
+}
+
+@utility masked-img {
+    mask-image: url();
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 50%
+}
