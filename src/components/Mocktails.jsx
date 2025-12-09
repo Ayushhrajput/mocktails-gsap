@@ -56,9 +56,9 @@ function Mocktails(props) {
             <div className="bg-white  w-max lg:w-6xl flex-col rounded-xl md:flex-row md:flex-center md:justify-around lg:items-end absolute left-1/2 -translate-x-1/2 bottom-1/8">
                 <div className='mocktails p-5 bg-gray-200 m-4 rounded-lg'>
                     <h1 className='style-font text-gray-600'>Mocktails</h1>
-                    <ul className=' flex flex-col  gap-4 md:gap-10'>
+                    <ul className=' flex flex-col gap-4 md:gap-10'>
                         {mocktailsList.map(({name, country, detail, price}) => (
-                            <li key={name} className='list flex justify-between gap-4'><div>{name}({country})</div><p className='bg-white text-gray-600 px-4 rounded-2xl'>{price}({detail})</p></li>
+                            <li key={name} className='list flex justify-between gap-2'><div>{name}({country})</div><p className='bg-white text-gray-600 px-4 rounded-2xl'>{price}({detail})</p></li>
                         ))}
                     </ul>
                 </div>
@@ -67,7 +67,7 @@ function Mocktails(props) {
                     <h1 className='style-font text-gray-600'>Cocktails</h1>
                     <ul className='flex flex-col gap-4 md:gap-10 '>
                         {cocktailsList.map(({name, country, detail, price}) => (
-                            <li key={name} className='list flex justify-between gap-4'><div>{name}({country})</div><p className='bg-white text-gray-600 px-4  rounded-2xl'>{price}({detail})</p></li>
+                            <li key={name} className='list flex justify-between'><div>{name}({country})</div><p className='bg-white text-gray-600 px-4  rounded-2xl'>{price}({detail})</p></li>
                         ))}
                     </ul>
                 </div>
