@@ -60,7 +60,7 @@ function Hero(props) {
       >
         <h1
           
-          className="text-[6rem] lg:text-[12rem] titled font-bold style-font w-max absolute top-1/12 left-1/2 -translate-x-1/2"
+          className="text-[6rem] lg:text-[12rem] titled font-bold style-font w-max absolute top-1/6 left-1/2 -translate-x-1/2"
         >
           MOJITO
         </h1>
