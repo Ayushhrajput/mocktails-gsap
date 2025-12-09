@@ -1,9 +1,9 @@
 export const headerLinks = [
     {id: 'mocktails', title: 'mocktails'},
-    {id: 'about', title: 'About us'},
+    {id: 'about', title: 'About'},
     {id: 'store', title: 'Store'},
     {
-        id: 'learnMore', title: 'Learn More'
+        id: 'learnMore', title: 'More'
     }
 ]
 
