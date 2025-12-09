@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import {useMediaQuery} from 'react-responsive'
 import { SplitText, ScrollTrigger } from "gsap/all";
 import lemon from '../imgs/lemon.png'
-import lemonSlice from '../imgs/lemonSlice.png'
+import lemonSlice from '../imgs/lemonslice.png'
 gsap.registerPlugin(SplitText, ScrollTrigger);
 
 function Hero(props) {
