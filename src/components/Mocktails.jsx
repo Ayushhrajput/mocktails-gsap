@@ -51,7 +51,7 @@ function Mocktails(props) {
     
 
     return (
-        <div className='h-dvh relative bg-blue-400 ' id='box'>
+        <div className='h-dvh relative bg-gray-800 ' id='box'>
             <img src={mocktails} alt="" id='img' className='w-60 lg:w-80 absolute left-1/2 -translate-x-1/2 -top-1/4' />
             <div className="bg-white  w-max lg:w-6xl flex-col rounded-xl md:flex-row md:flex-center md:justify-around lg:items-end absolute left-1/2 -translate-x-1/2 bottom-1/8">
                 <div className='mocktails p-5 bg-gray-200 m-4 rounded-lg'>
