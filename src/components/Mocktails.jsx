@@ -4,6 +4,7 @@ import { ScrollTrigger } from 'gsap/all'
 import { useMediaQuery } from 'react-responsive'
 import SplitText from 'gsap/SplitText'
 gsap.registerPlugin(ScrollTrigger, SplitText)
+import mocktails from '../imgs/mocktails.png'
 
 import { cocktailsList, mocktailsList } from './index'
 
@@ -51,7 +52,7 @@ function Mocktails(props) {
 
     return (
         <div className='h-dvh relative bg-blue-400' id='box'>
-            <img src="/imgs/mocktails.png" alt="" id='img' className='w-60 lg:w-80 absolute left-1/2 -translate-x-1/2 -top-1/6' />
+            <img src={mocktails} alt="" id='img' className='w-60 lg:w-80 absolute left-1/2 -translate-x-1/2 -top-1/6' />
             <div className="text-white text-lg w-max md:h-dvh md:w-6xl flex-col md:flex-row md:flex-center md:justify-around lg:items-end absolute left-1/2 -translate-x-1/2 bottom-1/8">
                 <div className='mocktails p-5 '>
                     <h1 className='style-font text-blue-200'>Mocktails</h1>

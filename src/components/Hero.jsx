@@ -2,6 +2,8 @@ import { useLayoutEffect, useState, useRef } from "react";
 import { gsap } from "gsap";
 import {useMediaQuery} from 'react-responsive'
 import { SplitText, ScrollTrigger } from "gsap/all";
+import lemon from '../imgs/lemon.png'
+import lemonSlice from '../imgs/lemonSlice.png'
 gsap.registerPlugin(SplitText, ScrollTrigger);
 
 function Hero(props) {
@@ -65,13 +67,13 @@ function Hero(props) {
           MOJITO
         </h1>
         <img
-          src="/imgs/lemonslice.png"
+          src={lemonSlice}
           alt=""
           id="l-lemon"
           className="max-w-40 absolute -left-1/6 md:-left-1/16 top-1/2"
         />
         <img
-          src="/imgs/lemon.png"
+          src={lemon}
           alt=""
           id="r-lemon"
           className="max-w-40 absolute -right-1/8 md:-right-1/16 top-1/4 -rotate-90"
