@@ -56,7 +56,7 @@ function Hero(props) {
     <div className="text-white">
       <section
         id="hero"
-        className="bg-blue-400 relative h-screen overflow-hidden"
+        className="bg-blue-200 relative h-screen overflow-hidden"
       >
         <h1
           

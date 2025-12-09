@@ -29,9 +29,9 @@ function Header(props) {
                     <img src="/" alt="" className='' />
                     <p className='w-max style-font font-bold text-2xl'>Velvet Pour</p>
                 </a>
-                <ul className='flex justify-around md:justify-end md:gap-10 w-full px-10'>
+                <ul className='flex justify-around md:justify-end gap-4 md:gap-10 w-full px-10'>
                     {headerLinks.map((link) => (
-                        <li key={link.id} className=''><a href='' className='peer'>{link.title}</a>
+                        <li key={link.id} className=''><a href='' className='peer shrink-0'>{link.title}</a>
                         <div className='h-0.5 peer-hover:w-full peer-focus:w-full w-0 transition-all duration-100   bg-white'></div>
                         </li>
                     ))}
