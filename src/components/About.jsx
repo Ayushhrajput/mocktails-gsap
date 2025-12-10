@@ -7,7 +7,7 @@ import { gsap } from 'gsap'
 import {profileList, FeatureLists, goodLists} from './index.js'
 import { SplitText } from 'gsap/all'
 import { ScrollTrigger } from 'gsap/all'
-import useMediaQuery from 'react-responsive'
+import {useMediaQuery} from 'react-responsive'
 gsap.registerPlugin(SplitText, ScrollTrigger)
 
 function About(props) {
@@ -24,7 +24,7 @@ function About(props) {
                 trigger: '#img',
                 start: 'top center',
                 end: 'top 20% ',
-                scrub: true,
+                scrub: 1,
                 
             }
         })
