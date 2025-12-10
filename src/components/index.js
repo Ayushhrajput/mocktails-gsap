@@ -72,7 +72,7 @@ export const sliderlists = [
 ] 
 export const mocktails = [
     {name: 'Tropical delight', id: 1},
-    {name: 'Irish Berry', id: 2},
+    {name: 'Irish', id: 2},
     {name: 'Tropical Breeze', id: 3},
     {name: 'Cool Twist', id: 4}
 ]
