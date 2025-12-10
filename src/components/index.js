@@ -67,13 +67,13 @@ export const profileList = [
         imgPath: 'https://images.pexels.com/photos/305555/pexels-photo-305555.jpeg'
     }
 ]
-const FeatureLists = [
+export const FeatureLists = [
     'perfectly balanced blends',
     'garnished to perfection',
     'ice-cold water time',
     'expertly shaken and stirred'
 ]
-const goodLists = [
+export const goodLists = [
     'handpicked ingredients',
     'better techniques',
     'bartending artistry in action',

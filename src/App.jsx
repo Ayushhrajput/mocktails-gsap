@@ -16,6 +16,7 @@ function App() {
       <Hero />
       <Mocktails />
       <About />
+      <div className='h-dvh'></div>
     </main>
   )
 }

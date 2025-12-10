@@ -1,12 +1,42 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import pexels from '../imgs/pexels.jpg'
 import pexels1 from '../imgs/pexels1.jpg'
 import pexels2 from '../imgs/pexels2.jpg'
 import pexels3 from '../imgs/pexels3.jpg'
-import pexels4 from '../imgs/pexels4.jpg'
-import {profileList} from './index.js'
+import { gsap } from 'gsap'
+import {profileList, FeatureLists, goodLists} from './index.js'
+import { SplitText } from 'gsap/all'
+import { ScrollTrigger } from 'gsap/all'
+gsap.registerPlugin(SplitText, ScrollTrigger)
 
 function About(props) {
+
+    useEffect(() => {
+        
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: '#container',
+                start: 'top center',
+                end: 'top 20%',
+                scrub: true,
+                
+            }
+        })
+        const lineSplit = new SplitText('.line', {
+            type: 'lines'
+        })
+        tl.to(lineSplit.lines, {
+            opacity: 0,
+            duration:1,
+            ease: 'power1.inOut'
+        })
+        tl.to('#img', {
+            maskSize: 100,
+            
+            duration: 1
+        })
+        },[])
+    
     return (
         <div className=''>
             <div className='w-full  flex flex-col md:flex-row justify-between gap-10 px-4 py-10'>
@@ -37,11 +67,23 @@ function About(props) {
                 <img src={pexels2} alt="" className='w-max md:w-xl md:h-min rounded-xl object-cover'/>
                 <img src={pexels3} alt="" className='w-max md:w-lg rounded-xl object-cover'/>
             </div>
-            <div>
-                <div>
-                    
+            <div id='box' className='p-4'>
+                <div id='container' className=' flex flex-col md:flex-row px-4 md:px-20 justify-between items-center'>
+                    <ul className='italic'>
+                        {FeatureLists.map((lines, index) => (
+                            <li key={index} className='line '>{lines}</li>
+                        ))}
+                    </ul>
+                    <div><img id='img' src='https://images.pexels.com/photos/761854/pexels-photo-761854.jpeg' alt="" className='masked-img w-sm rounded-lg' /></div>
+                    <ul className='italic'>
+                        {goodLists.map((lines, index) => (
+                            <li key={index} className='line '>{lines}</li>
+                        ))}
+                    </ul>
                 </div>
+                
             </div>
+            
             
         </div>
         
