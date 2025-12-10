@@ -7,11 +7,17 @@ import { gsap } from 'gsap'
 import {profileList, FeatureLists, goodLists} from './index.js'
 import { SplitText } from 'gsap/all'
 import { ScrollTrigger } from 'gsap/all'
+import useMediaQuery from 'react-responsive'
 gsap.registerPlugin(SplitText, ScrollTrigger)
 
 function About(props) {
 
+    const isMobile = useMediaQuery({maxWidth: 768})
+
     useLayoutEffect(() => {
+        window.onload = () => {
+            ScrollTrigger.refresh()
+        }
         
         const tl = gsap.timeline({
             scrollTrigger: {
@@ -28,11 +34,12 @@ function About(props) {
         tl.to(lineSplit.lines, {
             opacity: 0,
             duration:1,
+            delay: 1,
             ease: 'power1.inOut'
         })
         tl.to('#img', {
             maskSize: 100,
-            
+            scale: isMobile? 1: 2,
             duration: 1
         })
         
@@ -68,14 +75,14 @@ function About(props) {
                 <img src={pexels2} alt="" className='w-max md:w-xl md:h-min rounded-xl object-cover'/>
                 <img src={pexels3} alt="" className='w-max md:w-lg rounded-xl object-cover'/>
             </div>
-            <div id='box' className='p-4'>
-                <div id='container' className=' flex flex-col md:flex-row px-4 md:px-20 justify-between items-center'>
+            <div id='box' className='p-4 overflow-hidden'>
+                <div id='container' className=' flex flex-col md:h-120 md:flex-row px-4 md:px-20 justify-between items-center'>
                     <ul className='italic'>
                         {FeatureLists.map((lines, index) => (
                             <li key={index} className='line '>{lines}</li>
                         ))}
                     </ul>
-                    <div><img id='img' src='https://images.pexels.com/photos/761854/pexels-photo-761854.jpeg' alt="" className='masked-img w-sm rounded-lg' /></div>
+                    <div><img id='img' src='https://images.pexels.com/photos/761854/pexels-photo-761854.jpeg' alt="" className='masked-img w-sm md:lg rounded-lg' /></div>
                     <ul className='italic'>
                         {goodLists.map((lines, index) => (
                             <li key={index} className='line '>{lines}</li>
