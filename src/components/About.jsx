@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useLayoutEffect } from 'react';
 import pexels from '../imgs/pexels.jpg'
 import pexels1 from '../imgs/pexels1.jpg'
 import pexels2 from '../imgs/pexels2.jpg'
@@ -7,12 +7,11 @@ import { gsap } from 'gsap'
 import {profileList, FeatureLists, goodLists} from './index.js'
 import { SplitText } from 'gsap/all'
 import { ScrollTrigger } from 'gsap/all'
-import { useGSAP } from '@gsap/react';
 gsap.registerPlugin(SplitText, ScrollTrigger)
 
 function About(props) {
 
-    useGSAP(() => {
+    useLayoutEffect(() => {
         
         const tl = gsap.timeline({
             scrollTrigger: {
@@ -36,9 +35,7 @@ function About(props) {
             
             duration: 1
         })
-        window.addEventListener("load", () => {
-            ScrollTrigger.refresh();
-        });
+        
         },[])
     
     return (
