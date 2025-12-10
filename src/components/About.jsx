@@ -35,6 +35,9 @@ function About(props) {
             
             duration: 1
         })
+        window.addEventListener("load", () => {
+            ScrollTrigger.refresh();
+        });
         },[])
     
     return (
