@@ -7,11 +7,12 @@ import { gsap } from 'gsap'
 import {profileList, FeatureLists, goodLists} from './index.js'
 import { SplitText } from 'gsap/all'
 import { ScrollTrigger } from 'gsap/all'
+import { useGSAP } from '@gsap/react';
 gsap.registerPlugin(SplitText, ScrollTrigger)
 
 function About(props) {
 
-    useEffect(() => {
+    useGSAP(() => {
         
         const tl = gsap.timeline({
             scrollTrigger: {
