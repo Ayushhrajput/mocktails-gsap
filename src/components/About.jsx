@@ -15,9 +15,9 @@ function About(props) {
     const isMobile = useMediaQuery({maxWidth: 768})
 
     useLayoutEffect(() => {
-        window.onload = () => {
-            ScrollTrigger.refresh()
-        }
+        setTimeout(() => {
+            ScrollTrigger.refresh();
+            }, 1000);
         
         const tl = gsap.timeline({
             scrollTrigger: {
