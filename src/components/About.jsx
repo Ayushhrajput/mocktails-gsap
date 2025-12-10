@@ -15,9 +15,9 @@ function About(props) {
         
         const tl = gsap.timeline({
             scrollTrigger: {
-                trigger: '#container',
-                start: 'center 20%',
-                end: 'bottom top ',
+                trigger: '#img',
+                start: 'top center',
+                end: 'top 20% ',
                 scrub: true,
                 
             }
