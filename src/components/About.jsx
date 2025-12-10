@@ -62,7 +62,7 @@ function About({prop}) {
                         </div>
                         <div className='flex'>
                             {profileList.map((profile) => (
-                                <img key={profile.imgPath} src={profile.imgPath} alt="" className='w-10 h-10 object-cover rounded-full border -ml-4' ></img>
+                                <img key={profile.imgPath} src={profile.imgPath} alt="profile" className='w-10 h-10 object-cover rounded-full border -ml-4' ></img>
                             ))}
                         </div>
                     </div>
@@ -70,10 +70,10 @@ function About({prop}) {
                 
             </div>
             <div className='flex md:flex-row flex-col flex-wrap justify-center px-4 py-4 gap-4'>
-                <img src={pexels} alt="" className='w-max md:w-lg  rounded-xl object-cover' />
-                <img src={pexels1} alt="" className='w-max md:w-xl md:h-min rounded-xl object-cover'/>
-                <img src={pexels2} alt="" className='w-max md:w-xl md:h-min rounded-xl object-cover'/>
-                <img src={pexels3} alt="" className='w-max md:w-lg rounded-xl object-cover'/>
+                <img src={pexels} alt="about" className='w-max md:w-lg  rounded-xl object-cover' />
+                <img src={pexels1} alt="about" className='w-max md:w-xl md:h-min rounded-xl object-cover'/>
+                <img src={pexels2} alt="about" className='w-max md:w-xl md:h-min rounded-xl object-cover'/>
+                <img src={pexels3} alt="about" className='w-max md:w-lg rounded-xl object-cover'/>
             </div>
             <div id='box' className='px-4 overflow-hidden'>
                 <div id='container' className=' flex flex-col md:h-120 md:flex-row px-4 md:px-20 justify-between items-center'>
@@ -82,7 +82,7 @@ function About({prop}) {
                             <li key={index} className='line '>{lines}</li>
                         ))}
                     </ul>
-                    <div><img id='img' src='https://images.pexels.com/photos/761854/pexels-photo-761854.jpeg' alt="" className='masked-img w-2xs md:lg rounded-lg' /></div>
+                    <div><img id='img' src='https://images.pexels.com/photos/761854/pexels-photo-761854.jpeg' alt="about" className='masked-img w-2xs md:lg rounded-lg' /></div>
                     <ul className='italic'>
                         {goodLists.map((lines, index) => (
                             <li key={index} className='line '>{lines}</li>

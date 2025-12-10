@@ -52,27 +52,27 @@ export const sliderlists = [
      {
         id:1,
         image: 'https://images.pexels.com/photos/33933485/pexels-photo-33933485.jpeg',
-        title: 'Simple Ingredients. Bold Flavour'
+        title: 'A burst of sunshine in every sip'
      },
      {
         id:1,
         image: 'https://images.pexels.com/photos/12419173/pexels-photo-12419173.jpeg',
-        title: 'Simple Ingredients. Bold Flavour'
+        title: 'Sweet, vibrant, and irresistibly fresh'
      },
      {
         id:1,
         image: 'https://images.pexels.com/photos/20030870/pexels-photo-20030870.jpeg',
-        title: 'Simple Ingredients. Bold Flavour'
+        title: 'fruity, and full of island charm '
      },
      {
         id:1,
         image: 'https://images.pexels.com/photos/12419197/pexels-photo-12419197.jpeg',
-        title: 'Simple Ingredients. Bold Flavour'
+        title: 'Refreshing layers in every sip'
      }
 ] 
 export const mocktails = [
-    {name: 'Tropical', id: 1},
-    {name: 'Irish', id: 2},
-    {name: 'Caten Malbee', id: 3},
-    {name: 'Pina Colada', id: 4}
+    {name: 'Tropical delight', id: 1},
+    {name: 'Irish Berry', id: 2},
+    {name: 'Tropical Breeze', id: 3},
+    {name: 'Cool Twist', id: 4}
 ]

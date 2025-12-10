@@ -4,7 +4,7 @@ function Footer({prop}) {
         
         <div id={prop}>
             <div className='w-full col-center py-10 px-4'>
-                <h1 className='style-font text-4xl'>{storeInfo.heading}</h1>
+                <h1 className='style-font text-2xl md:text-4xl'>{storeInfo.heading}</h1>
                 <p className='text-xl'>{storeInfo.address}</p>
             </div>
             <div className='px-4 py-4 flex justify-between items-end'>
