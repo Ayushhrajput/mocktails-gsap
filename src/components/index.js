@@ -106,11 +106,35 @@ const socials = [
     url: '/x' 
     }
 ]
-const sliderlists = [
+export const sliderlists = [
      {
         id:1,
         name: 'Classic Mojito',
-        image: '',
+        image: 'https://images.pexels.com/photos/33933485/pexels-photo-33933485.jpeg',
+        title: 'Simple Ingredients. Bold Flavour'
+     },
+     {
+        id:1,
+        name: 'Classic Mojito',
+        image: 'https://images.pexels.com/photos/12419173/pexels-photo-12419173.jpeg',
+        title: 'Simple Ingredients. Bold Flavour'
+     },
+     {
+        id:1,
+        name: 'Classic Mojito',
+        image: 'https://images.pexels.com/photos/20030870/pexels-photo-20030870.jpeg',
+        title: 'Simple Ingredients. Bold Flavour'
+     },
+     {
+        id:1,
+        name: 'Classic Mojito',
+        image: 'https://images.pexels.com/photos/12419197/pexels-photo-12419197.jpeg',
         title: 'Simple Ingredients. Bold Flavour'
      }
 ] 
+export const cocktails = [
+    {name: 'Tropical', id: 1},
+    {name: 'Irish', id: 2},
+    {name: 'Caten Malbee', id: 3},
+    {name: 'Pina Colada', id: 4}
+]

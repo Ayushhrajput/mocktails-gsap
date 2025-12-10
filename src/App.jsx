@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import Mocktails from './components/Mocktails'
 import About from './components/About'
+import Menu from './components/Menu'
 gsap.registerPlugin(ScrollTrigger, SplitText)
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
       <Hero />
       <Mocktails />
       <About />
-      <div className='h-dvh'></div>
+      <Menu />
     </main>
   )
 }

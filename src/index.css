@@ -37,7 +37,7 @@
 }
 
 @utility masked-img {
-    mask-image: url('https://images.pexels.com/photos/305555/pexels-photo-305555.jpeg');
+    mask-image: url('./imgs/masked.png');
     mask-repeat: no-repeat;
     mask-position: center;
     mask-size: 50%;

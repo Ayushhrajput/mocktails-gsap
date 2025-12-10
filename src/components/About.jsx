@@ -12,7 +12,7 @@ gsap.registerPlugin(SplitText, ScrollTrigger)
 
 function About(props) {
 
-    const isMobile = useMediaQuery({maxWidth: 768})
+    const isMobile = useMediaQuery({maxWidth: 800})
 
     useLayoutEffect(() => {
         setTimeout(() => {
@@ -38,7 +38,7 @@ function About(props) {
             ease: 'power1.inOut'
         })
         tl.to('#img', {
-            maskSize: 100,
+            maskSize: 400,
             scale: isMobile? 1: 2,
             duration: 1
         })
@@ -75,14 +75,14 @@ function About(props) {
                 <img src={pexels2} alt="" className='w-max md:w-xl md:h-min rounded-xl object-cover'/>
                 <img src={pexels3} alt="" className='w-max md:w-lg rounded-xl object-cover'/>
             </div>
-            <div id='box' className='p-4 overflow-hidden'>
+            <div id='box' className='px-4 overflow-hidden'>
                 <div id='container' className=' flex flex-col md:h-120 md:flex-row px-4 md:px-20 justify-between items-center'>
                     <ul className='italic'>
                         {FeatureLists.map((lines, index) => (
                             <li key={index} className='line '>{lines}</li>
                         ))}
                     </ul>
-                    <div><img id='img' src='https://images.pexels.com/photos/761854/pexels-photo-761854.jpeg' alt="" className='masked-img w-sm md:lg rounded-lg' /></div>
+                    <div><img id='img' src='https://images.pexels.com/photos/761854/pexels-photo-761854.jpeg' alt="" className='masked-img w-2xs md:lg rounded-lg' /></div>
                     <ul className='italic'>
                         {goodLists.map((lines, index) => (
                             <li key={index} className='line '>{lines}</li>

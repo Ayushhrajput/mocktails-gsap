@@ -2,6 +2,7 @@ import { headerLinks } from './index';
 import { ScrollTrigger, SplitText } from 'gsap/all';
 import {gsap} from 'gsap'
 import { useGSAP } from '@gsap/react';
+import logo from '/logo/logo.jpg'
 gsap.registerPlugin(ScrollTrigger, SplitText)
 
 function Header(props) {
@@ -26,8 +27,7 @@ function Header(props) {
         <header className='text-white fixed left-0 top-0 w-full z-40'>
             <div className='flex-col md:flex-center px-4 p-2'>
                 <a href= '' className='flex-center gap-4 shrink-0'>
-                    <img src="/" alt="" className='' />
-                    <p className='w-max  text-2xl'>Velvet Pour</p>
+                    <img src={logo} alt="" className='w-10 h-10 rounded-full border' />
                 </a>
                 <ul className='flex justify-around md:justify-end gap-4 md:gap-10 w-full px-10'>
                     {headerLinks.map((link) => (
