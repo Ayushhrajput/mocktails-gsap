@@ -1,64 +1,13 @@
 export const headerLinks = [
-    {id: 'mocktails', title: 'mocktails'},
-    {id: 'about', title: 'About'},
-    {id: 'store', title: 'Store'},
     {
-        id: 'learnMore', title: 'More'
-    }
+        id: '#mojito', title: 'Mojito'
+    },
+    {id: '#about', title: 'About'},
+    {id: '#mocktails', title: 'Mocktails'},
+    {id: '#store', title: 'Store'}
+
 ]
 
-export const cocktailsList = [
-    {
-        name: 'Chapel Hill',
-        country: 'AU',
-        detail: '700ml',
-        price: '$10'
-    },
-    {
-        name: 'Rhino Pale',
-        country: 'CA',
-        detail: '700ml',
-        price: '$40'
-    },
-    {
-        name: 'Irish',
-        country: 'IE',
-        detail: '600ml',
-        price: '$19'
-    },{
-        name: 'Caten Malbee',
-        country: 'CA',
-        detail: '600ml',
-        price: '$40'
-    }
-]
-
-export const mocktailsList = [
-    {
-        name: 'Tropical Bloom',
-        country: 'US',
-        detail: '600ml',
-        price: '$20'
-    },
-    {
-        name: 'Passionfruit Mint',
-        country: 'US',
-        detail: '600ml',
-        price: '$40'
-    },
-    {
-        name: 'Lavender',
-        country: 'IE',
-        detail: '600ml',
-        price: '$40'
-    },
-    {
-        name: 'Pina Colada',
-        country: 'CA',
-        detail: '600ml',
-        price: '$19'
-    }
-]
 export const profileList = [
     {
         imgPath: 'https://images.pexels.com/photos/4917809/pexels-photo-4917809.jpeg'
@@ -80,59 +29,48 @@ export const goodLists = [
     'freshly muddled flavours'
 ] 
 
-const storeInfo = {
+export const storeInfo = {
     heading: 'where to find the store',
     address: 'Los Angeles, CA, 90210',
     contact: {
         phone: '(555) 987-6544',
-        email: 'stuff@moctail.com'
     } 
 }
-const openingHours  = [
-    {day: 'Mon-Thu', time: '10:00am - 12am'},
-    {day: 'Fri', time: '10:00am - 2am'},
-    {day: 'Sat', time: '9:00am - 2am'},
-    {day: 'Sun', time: '9:00am - 1am'}
-]
-const socials = [
+export const socials = [
     {
     name: 'instagram',
-    icon: '',
+    icon: 'https://www.pngarts.com/files/11/IG-Logo-Silhouette-PNG-Download-Image.png',
     url: '/' 
     },
     {
     name: 'X(twitter)',
-    icon: '',
+    icon: 'https://static.vecteezy.com/system/resources/previews/031/737/206/non_2x/twitter-new-logo-twitter-icons-new-twitter-logo-x-2023-x-social-media-icon-free-png.png',
     url: '/x' 
     }
 ]
 export const sliderlists = [
      {
         id:1,
-        name: 'Classic Mojito',
         image: 'https://images.pexels.com/photos/33933485/pexels-photo-33933485.jpeg',
         title: 'Simple Ingredients. Bold Flavour'
      },
      {
         id:1,
-        name: 'Classic Mojito',
         image: 'https://images.pexels.com/photos/12419173/pexels-photo-12419173.jpeg',
         title: 'Simple Ingredients. Bold Flavour'
      },
      {
         id:1,
-        name: 'Classic Mojito',
         image: 'https://images.pexels.com/photos/20030870/pexels-photo-20030870.jpeg',
         title: 'Simple Ingredients. Bold Flavour'
      },
      {
         id:1,
-        name: 'Classic Mojito',
         image: 'https://images.pexels.com/photos/12419197/pexels-photo-12419197.jpeg',
         title: 'Simple Ingredients. Bold Flavour'
      }
 ] 
-export const cocktails = [
+export const mocktails = [
     {name: 'Tropical', id: 1},
     {name: 'Irish', id: 2},
     {name: 'Caten Malbee', id: 3},

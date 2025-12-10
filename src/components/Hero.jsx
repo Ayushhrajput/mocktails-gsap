@@ -1,13 +1,10 @@
-import { useLayoutEffect, useState, useRef } from "react";
+import { useLayoutEffect} from "react";
 import { gsap } from "gsap";
 import {useMediaQuery} from 'react-responsive'
 import { SplitText, ScrollTrigger } from "gsap/all";
-import lemon from '../imgs/lemon.png'
-import lemonSlice from '../imgs/lemonslice.png'
-import mocktail from '../imgs/mocktail.png'
 gsap.registerPlugin(SplitText, ScrollTrigger);
 
-function Hero(props) {
+function Hero({prop}) {
   
     
     
@@ -19,8 +16,6 @@ function Hero(props) {
     const paragraphSplit = new SplitText(".paragraph", {
       type: "lines",
     });
-    
-    
     
     gsap.from(paragraphSplit.lines, {
       opacity: 0,
@@ -38,28 +33,13 @@ function Hero(props) {
       ease: "expo.inOut",
       stagger: 0.06,
     });
-    gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: "#hero",
-          start: "top top",
-          end: "bottom top",
-          scrub: true,
-        },
-      })
-      .to("#l-lemon", { y: -200 }, 0)
-      .to("#r-lemon", { y: 200 }, 0);
-      return () => {
-      titleSplit.revert();
-      paragraphSplit.revert();
-    };
 
   }, []);
 
   return (
     <div className="text-white">
       <section
-        id="hero"
+        id={prop}
         className="bg-[url('https://images.pexels.com/photos/12419161/pexels-photo-12419161.jpeg')] relative bg-cover bg-center h-140 w-full overflow-hidden"
       >
         <h1
