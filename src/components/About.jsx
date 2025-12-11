@@ -76,7 +76,7 @@ function About({prop}) {
                 <img src={pexels3} alt="about" className='w-max md:w-lg rounded-xl object-cover'/>
             </div>
             <div id='box' className='px-4 overflow-hidden'>
-                <div id='container' className=' flex flex-col md:h-120 md:flex-row px-4 md:px-20 justify-between items-center'>
+                <div id='container' className=' flex flex-col md:h-120 md:flex-row px-4 md:px-20 justify-around items-center'>
                     <ul className='italic'>
                         {FeatureLists.map((lines, index) => (
                             <li key={index} className='line '>{lines}</li>

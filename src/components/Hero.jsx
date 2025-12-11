@@ -40,7 +40,7 @@ function Hero({prop}) {
     <div className="text-white">
       <section
         id={prop}
-        className="bg-[url('https://images.pexels.com/photos/12419161/pexels-photo-12419161.jpeg')] relative bg-cover bg-center h-140 w-full overflow-hidden"
+        className="bg-[url('https://images.pexels.com/photos/12419161/pexels-photo-12419161.jpeg')] relative bg-cover bg-center h-160 w-full overflow-hidden"
       >
         <h1
           
