@@ -36,7 +36,7 @@ Built with **React.js**, styled using **Tailwind CSS**, animated with **GSAP**, 
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/mocktails-webapp.git
+   git clone https://github.com/Ayushhrajput/mocktails-gsap.git
    cd mocktails-webapp
    ``` 
 
@@ -47,13 +47,13 @@ npm install
 # or
 yarn install
 ```
-## Usage
+### Usage
 ```bash 
 npm run dev
 # or
 yarn dev
 ```
-## Deployment
+### Deployment
 
 ```bash
 npm run build
@@ -61,30 +61,6 @@ npm run build
 yarn build
 ```
 
-## Project Structure
-
-gsap-page/
-├── node_modules/         # Installed dependencies
-├── public/               # Static assets
-├── src/
-│   ├── components/       # React components
-│   │   ├── About.jsx
-│   │   ├── Footer.jsx
-│   │   ├── Header.jsx
-│   │   ├── Hero.jsx
-│   │   ├── Menu.jsx
-│   │   └── index.js
-│   ├── imgs/             # Images from Pexels
-│   ├── App.jsx           # Root component
-│   ├── index.css         # Global styles
-│   └── main.jsx          # Entry point
-├── .gitignore            # Git ignore rules
-├── eslint.config.js      # ESLint configuration
-├── index.html            # HTML template
-├── package-lock.json     # npm lock file
-├── package.json          # Dependencies and scripts
-├── readme.md             # Project documentation
-└── vite.config.js        # Vite configuration
 
 ## Project Screenshots
 ![Project Screenshot](./src/project/project.png)
