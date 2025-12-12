@@ -37,7 +37,7 @@ Built with **React.js**, styled using **Tailwind CSS**, animated with **GSAP**, 
 1. Clone the repository:
    ```bash
    git clone https://github.com/Ayushhrajput/mocktails-gsap.git
-   cd gsap-page
+   cd mocktails-gsap
    ``` 
 
 ## Install dependencies
